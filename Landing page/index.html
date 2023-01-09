@@ -1,0 +1,73 @@
+<!-- Poonam Kisan Salbande -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Landing page </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sec">
+        <header>
+            <a href="#">
+                <img src="logo.png" class="logo" alt=""> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Whats New</a></li>
+                <li><a href="#"> NewsLetter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </header>
+
+
+        <div class="content">
+            <div class="textBox">
+                <h2> That's What <br><span> I 
+                 I like 
+            </span></h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi repellendus similique, et blanditiis iusto tempora aspernatur eum itaque animi, rem perferendis natus error reiciendis voluptates iure aperiam voluptatum ratione nulla!</p>
+                <a href="#"> View All Product</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+            <li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li>
+                <a href="https://www.facebook.com/poonam.salbande.1"><img src="facebook.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/_poonam_2503/"><img src="instagram.png" alt=""></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/SalbandePoonam"><img src="twitter.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+
+        function changeBgColor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
